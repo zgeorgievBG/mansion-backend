@@ -3,7 +3,7 @@ const api = require('../services/user');
 const router = require('express').Router();
 
 
-router.post('/register', async (req, res) => {
+router.post(async (req, res) => {
     const { email, fname, userName, password, address1, address2, city, country, postalCode, phoneNumber,bonusCode } = req.body;
 
     try {
