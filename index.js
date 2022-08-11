@@ -19,7 +19,6 @@ async function start() {
     }
 
     const app = express();
-    app.get('/', (req, res) => res.send('Hello world'))
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
     app.use(cors());
