@@ -3,6 +3,7 @@ const express = require('express');
 
 const cors = require('./src/middlewares/cors');
 const usersController = require('./src/controllers/users');
+const port = 3030;
 
 
 async function start() {
@@ -25,7 +26,7 @@ async function start() {
 
     app.use('/users', usersController);
 
-    app.listen(3030, () => console.log('REST Service started on port 3030'));
+    app.listen(process.env.PORT || port, () => console.log('REST Service started on port 3030'));
 }
 
 
