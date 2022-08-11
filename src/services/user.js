@@ -10,7 +10,7 @@ async function register(email, fname, userName,password) {
     const existing = await User.findOne({ email: new RegExp(`^${email}$`, 'i') });
 
     if (existing) {
-        throw new Error('Email is taken');
+        throw new Error('Duplicate Username, Another user has already selected this username.');
     }
 
     // hash password
