@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const express = require('express');
 
-const cors = require('../../interview/server/src/middlewares/cors');
+const cors = require('./src/middlewares/cors');
 const usersController = require('./src/controllers/users');
 
 
