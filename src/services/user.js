@@ -5,7 +5,7 @@ const User = require('../models/User');
 
 const JWT_SECRET = 't gcsergcserg  b920n3w4pc[w3tcawert6v9';
 
-async function register(email, password) {
+async function register(email, fname, userName,password) {
     // check if email is taken
     const existing = await User.findOne({ email: new RegExp(`^${email}$`, 'i') });
 
@@ -19,6 +19,8 @@ async function register(email, password) {
     // store user
     const user = new User({
         email,
+        fname,
+        userName,
         hashedPassword
     });
 
