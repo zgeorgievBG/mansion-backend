@@ -10,9 +10,9 @@ const userSchema = new Schema({
     address2: { type: String, required: true },
     city: { type: String, required: true },
     country: { type: String, required: true },
-    phoneNumber: { type: Number, required: true },
-    postalCode: { type: Number, required: true },
-    bonusCode: { type: Number, required: true }
+    phoneNumber: { type: String, required: true },
+    postalCode: { type: String, required: true },
+    bonusCode: { type: String, required: true }
 
 });
 
