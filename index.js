@@ -23,7 +23,7 @@ async function start() {
     app.use(express.json());
     app.use(cors());
 
-    app.use('/register', usersController);
+    app.use('/users', usersController);
 
     app.listen(process.env.PORT || port, () => console.log('REST Service started on port 3030'));
 }
