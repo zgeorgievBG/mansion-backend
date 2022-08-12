@@ -50,7 +50,13 @@ async function register(
   return user;
 }
 
+async function getAllUsers() {
+    const users = await User.find()
+    return users;
+}
+
 
 module.exports = {
-    register
+    register,
+    getAllUsers
 };
