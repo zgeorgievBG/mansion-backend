@@ -12,7 +12,7 @@ const userSchema = new Schema({
     country: { type: String, required: true },
     phoneNumber: { type: String, required: true },
     postalCode: { type: String, required: true },
-    bonusCode: { type: String, required: true }
+    bonusCode: { type: String, required: false }
 
 });
 
